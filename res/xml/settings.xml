@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="Crypto Settings"><CheckBoxPreference android:summary="If enabled, messages will be encrypted with your key before sending" android:key="use_crypto" android:title="Use Encrypted Messages"></CheckBoxPreference>
+<EditTextPreference android:summary="This key will be used to encrypt your messages" android:title="Secret Key" android:key="key"></EditTextPreference>
+
+</PreferenceCategory>
+<PreferenceCategory android:title="General Settings">
+<CheckBoxPreference android:defaultValue="false" android:key="paranoia" android:title="Paranoid Mode" android:summary="When in paranoid mode all data (including your key) will be flushed when the stegDroid is closed/minimized"></CheckBoxPreference>
+</PreferenceCategory>
+
+</PreferenceScreen>

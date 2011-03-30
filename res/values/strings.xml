@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">StegDroid</string>
+    <string name="p1_message">Enter your secret message, and click next when you\'re done. Press the menu button for help!</string>
+    <string name="p2_message">Record your voice message. Your text message will be hidden inside this recording. It must be long enough to encode all of the data!</string>
+    <string name="p3_message">Your message embedded successfully! You can now share it, listen to it, and check that the information is extracted correctly.</string>
+    <string name="multisend_message">Select a contact group to send your message to. You can add more groups from your Google account online.</string>
+    <string name="message_hint">Enter your secret message here</string>
+    <string name="char_counter_initial">0/120 characters</string>
+    <string name="back_button">Back</string>
+    <string name="next_button">Next</string>
+    <string name="play_unencoded">Play Unencoded file</string>
+    <string name="play_encoded">Play Encoded file</string>
+    <string name="record">Record</string>
+    <string name="rerecord">Re-Record</string>
+    <string name="stop">Stop</string>
+    <string name="extract_data">Test Extracting Data</string>
+    <string name="share">Send Encoded File</string>
+    <string name="multicast">Share File with Group (Multicast)</string>
+    <string name="counter_text">seconds of audio left to record</string>
+    <string name="counter_text_finished">You can stop recording when you are ready</string>
+    <string name="counter_finished">Done!</string>
+    <string name="embed_fail_message">The audio file was not long enough to embed your message. Please try again.</string>
+    <string name="decryption_fail_message">Failed to decrypt the embedded data. Enter a new key phrase to try again or cancel.</string>
+    <string name="decryption_fail_hint">This will overwrite the key you already have stored.</string>
+    <string name="short_recording_toast">Your recording was not long enough, please record another message.</string>
+    <string name="decryption_fail">Decryption Fail.</string>
+    <string name="dropbox_login_prompt">Please enter your Dropbox password. This will not be saved.</string>
+    <string name="dropbox_login_hint">Password</string>
+    <string name="loader_extracting_data">Extracting Data...</string>
+    <string name="loader_embedding_data">Embedding Data...</string>
+    <string name="feedback_message">Does it work (is the message you get when you click Test Extracting Data the same as the one you typed in)? Please send feedback using the link in the menu!</string>
+	<string name="decode_instructions">To decode a message, open (or Preview) it from your email or file browser program and choose to open it with StegDroid.</string>
+</resources>

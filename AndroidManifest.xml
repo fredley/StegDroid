@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="uk.ac.cam.tfmw2.stegdroid"
+      android:versionName="0.75" android:versionCode="11">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:killAfterRestore="false">
+        <activity android:name=".StegDroid"
+                  android:label="@string/app_name"
+              	  android:screenOrientation="portrait" 
+              	  android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+            	 <action android:name="android.intent.action.VIEW"/>
+                 <action android:name="android.intent.action.EDIT" />
+                 <action android:name="android.intent.action.PICK" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <data android:mimeType="audio/wav" />
+                 <data android:mimeType="audio/x-wav" />
+                 <data android:mimeType="audio/ogg" />
+                 <data android:mimeType="application/ogg" />
+                 <data android:scheme="content"/>  
+                 <data android:scheme="file"/>  
+            </intent-filter>
+	<data android:mimeType="vnd.android.cursor.item/uk.ac.cam.tfmw2.stegdroid.provider.StegDroid"></data>
+        
+</activity>
+        
+        	<provider android:name="urbanstew.RehearsalAssistant.RehearsalData" android:authorities="uk.ac.cam.tfmw2.stegdroid.provider.StegDroid"></provider>
+        
+        <service android:name="urbanstew.RehearsalAssistant.RecordService">
+<intent-filter>
+	<category android:name="android.intent.category.DEFAULT"></category>
+	</intent-filter>
+    <intent-filter>
+                <action android:name="uk.ac.cam.tfmw2.stegdroid.IRecordService" />
+    </intent-filter>
+
+</service>
+
+    <activity android:name="Settings" android:label="Settings"></activity>
+<activity android:name="FAQ" android:label="FAQ"></activity>
+<activity android:name="MultiSend" android:label="MultiSend"></activity>
+<activity android:name="MP3Convert" android:label="MP3Convert"></activity>
+</application>
+    <uses-sdk android:minSdkVersion="7" />
+
+<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+</manifest> 

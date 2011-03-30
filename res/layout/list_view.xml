@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:id="@+id/text"
+        android:textColor="#fff"
+        android:layout_width="fill_parent"
+        android:padding="10dip"
+   		android:textSize="15dip"
+        android:layout_height="wrap_content"
+        android:text="@string/multisend_message"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   			android:gravity="bottom"
+             android:layout_width="fill_parent" 
+             android:layout_height="fill_parent" 
+             android:orientation="horizontal" >
+   <Button android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/left_arrow"
+            android:text="@string/back_button" />
+   <Button android:id="@+id/p3Next"
+   			android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+             android:drawableRight="@drawable/right_arrow"
+            android:text="@string/next_button" />
+			</LinearLayout>
+</LinearLayout>
